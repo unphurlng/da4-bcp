@@ -10,10 +10,19 @@
 <body>
     <h1>Apps FTW!</h1>
 
+    <form onsubmit="return handleSubmit(event), false;">
+
+    <p>
+        <label>
+            Name:
+            <input name="name" type="text">
+        </label>
+    </p>
+
     <p>
         <label>
             Comments:
-            <textarea name="" type="text"></textarea>
+            <textarea name="comments" type="text"></textarea>
         </label>
         
     <p>
@@ -28,9 +37,9 @@
         <label><input name="grade" type="radio"> C</label>
     </p>
 
-    <input name="name" type="text">
+    <button>Submit</button>
 
-    <button onclick="sayHello()">Click Me!</button>
+    </form>
 
     <script src="index.js"></script>
 </body>
